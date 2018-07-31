@@ -1,0 +1,170 @@
+*{
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background:honeydew;
+  /* background:rgb(228, 177, 100); */
+}
+
+.App {
+  text-align: center;
+}
+
+.heading{
+  text-align: center;
+}
+
+.link-all{
+  margin: 20px 20px;;
+  display: flex;
+  justify-content: center;
+}
+.link{
+  text-decoration: none;
+  font-size: 20px;
+  color: #0275d8;
+  margin: 30px 40px;
+}
+.single-post-link{
+  text-decoration: none;
+      color: #0275d8;
+}
+.inputForm{
+  text-align: center;
+  background: #fff;
+  padding: 35px 20px;
+  border: 1px solid #ddd;
+}
+.form-control{
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+   width: 90%;
+}
+.text-field{
+  height: 150px;
+}
+.btnSubmit{
+  height: 30px;
+}
+input[type="submit"] {
+  background-color: #202221;
+  color: #f1e5e6;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 25px 0 0;
+  border: none;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  -webkit-appearance: button;
+}
+
+/* Single posts */
+.singlePost{
+  margin: 20px 10%;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+.title-author{
+  display:flex;
+  justify-content: space-between;
+}
+.title-author > h2{
+font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.description{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.post{
+  margin: 20px 10%;
+  background: #ffffff;
+  border: 1px solid #ccc;
+}
+.single-post{
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 20px 5px;
+}
+.single-post{
+  position: relative;;
+}
+.edit-post{
+  position: absolute;
+  top:20px;
+  right: 10px;
+  background-color: rgb(45, 37, 155);
+  color: #f1e5e6;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 25px 0 0;
+  border: none;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  -webkit-appearance: button;
+}
+.delete-post{
+  position: absolute;
+  bottom:25px;
+  right: 10px;
+  background-color: red;
+  color: #f1e5e6;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 25px 0 0;
+  border: none;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  -webkit-appearance: button;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+form{
+  border: 2px solid black;
+  margin: 0px 20%;
+  display: block;
+  margin-top: 0em;
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
