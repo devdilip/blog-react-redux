@@ -162,6 +162,44 @@ form{
 
 
 
+.inputForm{
+  position: relative;
+}
+.alert {
+  display: none;
+  position: absolute;
+  top:50%;
+  right: 15%;
+  left: 15%;
+  padding: 25px;
+  color: white;
+  opacity: 1;
+  width:65%;
+  border-radius: 20px;
+  height:40px;
+  transition: opacity 0.6s;
+  background-color: #4CAF50;
+  margin-bottom: 15px;
+}
+.postbutton {
+  margin-left: 15px;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 20%;
+  transition: 0.3s;
+}
+
+.postbutton:hover {
+  color: black;
+}
+
+
 
 
 @keyframes App-logo-spin {

@@ -6,9 +6,12 @@ import { Link } from 'react-router-dom';
 import * as addAction from '../actions/PostActions';
 
 class Posts extends Component {
-  componentWillMount(){
+  componentWillMount() {
     this.props.actions.fetchPosts();
-}
+  }
+  deletePost(id) {
+    this.props.actions.deletePost(id)
+  }
 
   render() {
     const { posts } = this.props;
@@ -16,17 +19,18 @@ class Posts extends Component {
       <div>
         <PageHeader />
         <div className="post">
-          {(posts.length>0) ?
-            posts[0].map((post, i) => {
-              if(post){
-              return (
-                <div className="single-post" id={post._id} key={post._id}>
-                  <h2>{<Link className="single-post-link" to={`/post/${post._id}`}>{`Title :: `+post.title}</Link>}</h2>
-                  <h2>{`Author :: ` + post.author}</h2>
-                  <Link to={`/editpost/${post._id}`}><button className="edit-post">Edit Post</button></Link>
-                  <button className="delete-post">Delete Post</button>
-                </div>
-              )}
+          {(posts.length > 0) ?
+            posts[0].reverse().map((post, i) => {
+              if (post) {
+                return (
+                  <div className="single-post" id={post._id} key={post._id}>
+                    <h2>{<Link className="single-post-link" to={`/post/${post._id}`}>{`Title :: ` + post.title}</Link>}</h2>
+                    <h2>{`Author :: ` + post.author}</h2>
+                    <Link to={`/editpost/${post._id}`}><button className="edit-post">Edit Post</button></Link>
+                    <button className="delete-post" onClick={() => this.deletePost(post._id)}>Delete Post</button>
+                  </div>
+                )
+              }
             }) : <div>No Blogs is there</div>
           }
         </div>
