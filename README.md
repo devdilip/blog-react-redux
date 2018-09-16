@@ -1,2 +1,9 @@
-Start this project 
+## Build 
+```
+yarn add
+```
+
+## Start
+```
 yarn start
+```
